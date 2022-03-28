@@ -1,4 +1,4 @@
-# 🚀 Trybe Atividades
+# Trybe Atividades 🚀
 Uma lista de atividades da [Trybe](www.betrybe.com) criada por mim, [João Victor Marques](https://www.linkedin.com/in/joao-marques-ba302a19b/) <br>
 a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim:
 
