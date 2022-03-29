@@ -12,7 +12,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] Unix & Bash - Parte 1
 - [x] Unix & Bash - Parte 2
 
-**Bloco 02: Git, GitHub e Internet** ❌
+**[Bloco 02: Git, GitHub e Internet](https://github.com/JoaoVMarques/trybe-exercicios/tree/master/01-fundamentos/bloco-02)** ❌
 - [x] Git & GitHub - O que é e para que serve
 - [x] Git & GitHub - Entendendo os comandos
 - [ ] Internet - Entendendo como ela funciona
