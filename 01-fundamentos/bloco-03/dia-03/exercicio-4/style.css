@@ -32,3 +32,27 @@ li em{
 #linguagens li:not(:nth-child(n + 4)){
     color: blue;
 }
+
+#allys li a:hover{
+    font-weight: 900;
+}
+
+#allys li a[href*="stackoverflow"]:hover{
+    color: orange;
+}
+
+#allys li a[href*="w3schools"]:hover{
+    color: green;
+}
+
+#allys li a[href*="mozilla"]:hover{
+    color: blue;
+}
+
+#allys li a[href*="devdocs"]:hover{
+    color: yellow;
+}
+
+#allys li a[href*="betrybe"]:hover{
+    color: greenyellow;
+}
