@@ -1,0 +1,19 @@
+#cor_primaria:hover{
+    border: 2px solid red;
+}
+
+#cor_secundaria:hover{
+    border: 2px solid purple;
+}
+
+#cor_complementar:hover{
+    border: 2px solid orange;
+}
+
+#cor_escura:hover{
+    border: 2px solid black;
+}
+
+#cor_clara:hover{
+    border: 2px solid pink;
+}
