@@ -22,7 +22,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 ##### Bloco 3: Introdução à HTML e CSS ⌛
 - [x] 3.1 - Introdução - HTML & CSS
 - [x] 3.1 - HTML & CSS - Estruturas de página
-- [ ] 3.2 - HTML & CSS - Primeiros passos em CSS
+- [x] 3.2 - HTML & CSS - Primeiros passos em CSS
 - [ ] 3.3 - HTML & CSS - Seletores e posicionamento
 - [ ] 3.4 - HTML Semântico
 - [ ] 3.5 - Projeto - Lessons Learned
