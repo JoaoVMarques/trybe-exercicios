@@ -10,6 +10,20 @@
     padding: 20px;
     line-height: 25px;
     list-style: square;
+    margin: 0px;
+    padding: 0px;
+}
+
+#table-items{
+    padding: 10px 20px;
+}
+
+#table-header{
+    background-color: pink;
+    font-weight: 600;
+    margin: 0px;
+    padding: 20px;
+    border-bottom: 1px solid black;
 }
 
 .nav-item{
