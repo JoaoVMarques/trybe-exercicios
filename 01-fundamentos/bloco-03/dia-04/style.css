@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+  }
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    /*  botar o primeiro lugar em cima*/
+    margin-left: 200px;
+    display: block;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    /*  botar o segundo lugar ao lado do terceiro*/
+    display: inline-block;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    /*  botar o terceiro lugar ao lado do segundo*/
+    display: inline-block;
+  }
+
+    /* Deixar o testo alinhado */
+  .premio {
+      display: inline;
+  }
