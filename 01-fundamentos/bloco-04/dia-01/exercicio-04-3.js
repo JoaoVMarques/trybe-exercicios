@@ -16,4 +16,4 @@ switch (state) {
   default:
     console.log("não se aplica");
     break;
-}
+} 
