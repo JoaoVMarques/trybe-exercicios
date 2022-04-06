@@ -28,7 +28,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 3.5 - Projeto - Lessons Learned
 
 ##### Bloco 4: Introdução à JavaScript e Lógica de Programação ⌛
-- [ ] 4.1 - Introdução - JavaScript
+- [x] 4.1 - Introdução - JavaScript
 - [ ] 4.1 - JavaScript - Primeiros passos
 - [ ] 4.2 - JavaScript - Array e loop For
 - [ ] 4.3 - JavaScript - Lógica de Programação e Algoritmos
