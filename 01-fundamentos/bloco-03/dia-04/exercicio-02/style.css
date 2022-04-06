@@ -1,0 +1,49 @@
+#nav-block {
+    display: inline-block;
+    border: 1px solid black;
+    padding-right: 20px;
+}
+
+#table-info {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 20px;
+    line-height: 25px;
+    list-style: square;
+    margin: 0px;
+    padding: 0px;
+}
+
+#table-items {
+    padding: 10px 20px;
+}
+
+#table-header {
+    background-color: pink;
+    font-weight: 600;
+    margin: 0px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.curiosity {
+    margin-bottom: 20px;
+}
+
+.pictures {
+    width: 400px;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#link:hover {
+    text-decoration: underline;
+    color: blue;
+}
