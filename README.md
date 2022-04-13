@@ -27,7 +27,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 3.4 - HTML Semântico
 - [x] 3.5 - Projeto - Lessons Learned
 
-##### Bloco 4: Introdução à JavaScript e Lógica de Programação ⌛
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação ✔
 - [x] 4.1 - Introdução - JavaScript
 - [x] 4.1 - JavaScript - Primeiros passos
 - [x] 4.2 - JavaScript - Array e loop For
@@ -35,7 +35,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 4.4 - JavaScript - Objetos e funções
 - [x] 4.5 - Projeto - Playground Functions
 
-##### Bloco 5: JavaScript: DOM, Eventos e Web Storage ❌
+##### Bloco 5: JavaScript: DOM, Eventos e Web Storage ⌛
 - [ ] 5.1 - JavaScript - DOM e seletores
 - [ ] 5.2 - JavaScript - Trabalhando com elementos
 - [ ] 5.3 - JavaScript - Eventos
