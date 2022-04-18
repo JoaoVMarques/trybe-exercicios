@@ -14,6 +14,8 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
+
+// Criar dias ----------
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 const daysList = document.getElementById('days');
 
@@ -37,18 +39,16 @@ for(let days of dezDaysList) {
   daysList.appendChild(createList(days));
 }
 
-// Criar dias ----------
-
-// Criar botoes ----------
+// Criar botao feriados ----------
 
 const buttonContainer = document.getElementsByClassName('buttons-container');
-const btn = document.createElement('button');
-btn.addEventListener('click', holidayColor);
+const btnholiday= document.createElement('button');
+btnholiday.addEventListener('click', holidayColor);
 let color = false;
 
-function createHolidayButton (name) {
+function createButton (name, id, btn) {
   btn.innerHTML = name;
-  btn.id = 'btn-holiday';
+  btn.id = id;
   buttonContainer[0].appendChild(btn);
 }
 
@@ -69,4 +69,8 @@ function holidayColor() {
 
 }
 
-createHolidayButton('Feriados');
+createButton('Feriados', 'btn-holiday', btnholiday);
+
+// Criar botao sexta-feira ----------
+const btnFriday = document.createElement('button');
+createButton('Sexta-feira', 'btn-friday', btnFriday);
