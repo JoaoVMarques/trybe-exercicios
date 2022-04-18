@@ -109,13 +109,24 @@ function zoomOut() {
 }
 
 // Minhas tarefas ----------
+const taskContainer = document.querySelector('.my-tasks');
 
 function createMyTasks(name) {
   const text = document.createTextNode(name)
-  const taskContainer = document.querySelector('.my-tasks');
   const task = document.createElement('span');
   task.appendChild(text)
   taskContainer.appendChild(task);
 }
 
 createMyTasks('Cozinhar');
+
+// Cor nas tarefas ----------
+
+function taskColor(color) {
+  const ColorContainer = document.createElement('div');
+  ColorContainer.classList.add('task')
+  ColorContainer.style.backgroundColor = color;
+  taskContainer.appendChild(ColorContainer);
+}
+
+taskColor('green');
