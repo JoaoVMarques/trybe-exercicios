@@ -72,6 +72,7 @@ function holidayColor() {
 
 // Criar botao sexta-feira ----------
 const btnFriday = document.createElement('button');
+createButton('Sexta-feira', 'btn-friday', btnFriday);
 btnFriday.addEventListener('click', fridayText);
 let sextou = false;
 
@@ -91,4 +92,20 @@ function fridayText() {
   }
 }
 
-createButton('Sexta-feira', 'btn-friday', btnFriday);
+// ZoomIn e ZoomOut ----------
+days = document.querySelectorAll('li')
+for (let i = 0; i < days.length; i += 1) {
+  days[i].addEventListener('mouseover', zoomIn);
+}
+
+function zoomIn() {
+  event.target.style.fontSize = '35px';
+
+  event.target.addEventListener('mouseout', zoomOut);
+}
+
+function zoomOut() {
+  event.target.style.fontSize = '20px';
+}
+
+// Minhas tarefas ----------
