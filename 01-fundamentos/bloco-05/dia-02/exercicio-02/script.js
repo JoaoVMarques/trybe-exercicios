@@ -42,12 +42,31 @@ for(let days of dezDaysList) {
 // Criar botoes ----------
 
 const buttonContainer = document.getElementsByClassName('buttons-container');
+const btn = document.createElement('button');
+btn.addEventListener('click', holidayColor);
+let color = false;
 
 function createHolidayButton (name) {
-  const btn = document.createElement('button');
   btn.innerHTML = name;
   btn.id = 'btn-holiday';
   buttonContainer[0].appendChild(btn);
+}
+
+function holidayColor() {
+  holidayDays = document.querySelectorAll('.holiday');
+  if (color === false) {
+    for (let i = 0; i < holidayDays.length; i += 1) {
+      holidayDays[i].style.background = 'rgb(76,164,109)';
+    }  
+    color = true;
+  }
+  else {
+    for (let i = 0; i < holidayDays.length; i += 1) {
+      holidayDays[i].style.background = 'rgb(238,238,238)';
+    }  
+    color = false;
+  }
+
 }
 
 createHolidayButton('Feriados');
