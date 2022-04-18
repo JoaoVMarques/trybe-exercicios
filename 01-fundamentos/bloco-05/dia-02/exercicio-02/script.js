@@ -22,7 +22,7 @@ const daysList = document.getElementById('days');
 function createList(days) {
   const list = document.createElement("li");
   const text = document.createTextNode(days)
-
+  
   if (days === 24 || days === 25 || days === 31) {
     list.classList.add('holiday')
   }
@@ -32,6 +32,7 @@ function createList(days) {
   }
   list.appendChild(text);
 
+  list.classList.add('day');
   return list;
 }
 
@@ -93,7 +94,7 @@ function fridayText() {
 }
 
 // ZoomIn e ZoomOut ----------
-days = document.querySelectorAll('li');
+days = document.querySelectorAll('.day');
 for (let i = 0; i < days.length; i += 1) {
   days[i].addEventListener('mouseover', zoomIn);
   days[i].addEventListener('click', changeColor);
@@ -154,7 +155,36 @@ function teste() {
 }
 
 // Colocar a cor da tarefa no dia ----------
-
 function changeColor() {
   event.target.style.color = selectedTaskColor;
 }
+
+// Adicionar compromissos -----------
+const btnAdd = document.getElementById('btn-add');
+const taskList = document.getElementsByClassName('task-list');
+const input = document.getElementById('task-input');
+btnAdd.addEventListener('click', addText);
+input.addEventListener('keypress', Enter);
+
+function addText() {
+  if (input.value.length > 0) {
+    taskList[0].appendChild(compromiseList(input.value));
+  }
+  else {
+    alert('Preencha A parte de COMPROMISSOS!');
+  }
+}
+
+function Enter() {
+  if (event.code === 'Enter') {
+    addText();
+  }
+}
+
+function compromiseList(compromise) {
+  const list = document.createElement("li");
+  const text = document.createTextNode(compromise)
+  list.appendChild(text);
+  return list;
+}
+
