@@ -42,8 +42,9 @@ for(let days of dezDaysList) {
 // Criar botao feriados ----------
 
 const buttonContainer = document.getElementsByClassName('buttons-container');
-const btnholiday= document.createElement('button');
-btnholiday.addEventListener('click', holidayColor);
+const btnHoliday= document.createElement('button');
+createButton('Feriados', 'btn-holiday', btnHoliday);
+btnHoliday.addEventListener('click', holidayColor);
 let color = false;
 
 function createButton (name, id, btn) {
@@ -54,7 +55,7 @@ function createButton (name, id, btn) {
 
 function holidayColor() {
   holidayDays = document.querySelectorAll('.holiday');
-  if (color === false) {
+  if (!color) {
     for (let i = 0; i < holidayDays.length; i += 1) {
       holidayDays[i].style.background = 'rgb(76,164,109)';
     }  
@@ -69,8 +70,25 @@ function holidayColor() {
 
 }
 
-createButton('Feriados', 'btn-holiday', btnholiday);
-
 // Criar botao sexta-feira ----------
 const btnFriday = document.createElement('button');
+btnFriday.addEventListener('click', fridayText);
+let sextou = false;
+
+function fridayText() {
+  fridayDays = document.querySelectorAll('.friday');
+  if (!sextou) {
+    for (let i = 0; i < fridayDays.length; i += 1) {
+      fridayDays[i].innerText = 'SEXTOU!';
+    }
+    sextou = true;
+  }
+  else {
+    for (let i = 0; i < fridayDays.length; i += 1) {
+      fridayDays[i].innerHTML = (i * 7) + 4
+    }
+    sextou = false;
+  }
+}
+
 createButton('Sexta-feira', 'btn-friday', btnFriday);
