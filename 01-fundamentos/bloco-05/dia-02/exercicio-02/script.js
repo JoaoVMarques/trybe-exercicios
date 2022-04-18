@@ -96,6 +96,7 @@ function fridayText() {
 days = document.querySelectorAll('li');
 for (let i = 0; i < days.length; i += 1) {
   days[i].addEventListener('mouseover', zoomIn);
+  days[i].addEventListener('click', changeColor);
 }
 
 function zoomIn() {
@@ -132,6 +133,8 @@ function taskColor(color) {
 taskColor('green');
 
 // Selecionar cor das tarefas ----------
+let selectedTaskColor = '#777';
+
 Colors = document.querySelectorAll('.task');
 for (let i = 0; i < Colors.length; i += 1) {
   Colors[i].addEventListener('click', teste);
@@ -139,9 +142,19 @@ for (let i = 0; i < Colors.length; i += 1) {
 
 function teste() {
   if (event.target.classList != 'task selected') {
+    selectedColor = document.querySelector('.task');
+
     event.target.classList.add('selected');
+    selectedTaskColor = selectedColor.style.backgroundColor;
   }
   else {
     event.target.classList.remove('selected');
+    selectedTaskColor = '#777';
   }
+}
+
+// Colocar a cor da tarefa no dia ----------
+
+function changeColor() {
+  event.target.style.color = selectedTaskColor;
 }
