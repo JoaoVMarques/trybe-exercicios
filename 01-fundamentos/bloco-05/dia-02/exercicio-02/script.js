@@ -93,7 +93,7 @@ function fridayText() {
 }
 
 // ZoomIn e ZoomOut ----------
-days = document.querySelectorAll('li')
+days = document.querySelectorAll('li');
 for (let i = 0; i < days.length; i += 1) {
   days[i].addEventListener('mouseover', zoomIn);
 }
@@ -111,7 +111,7 @@ function zoomOut() {
 // Minhas tarefas ----------
 const taskContainer = document.querySelector('.my-tasks');
 
-function createMyTasks(name) {
+function createMyTasks(name) {  
   const text = document.createTextNode(name)
   const task = document.createElement('span');
   task.appendChild(text)
@@ -130,3 +130,18 @@ function taskColor(color) {
 }
 
 taskColor('green');
+
+// Selecionar cor das tarefas ----------
+Colors = document.querySelectorAll('.task');
+for (let i = 0; i < Colors.length; i += 1) {
+  Colors[i].addEventListener('click', teste);
+}
+
+function teste() {
+  if (event.target.classList != 'task selected') {
+    event.target.classList.add('selected');
+  }
+  else {
+    event.target.classList.remove('selected');
+  }
+}
