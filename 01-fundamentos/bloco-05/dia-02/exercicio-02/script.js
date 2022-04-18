@@ -99,7 +99,7 @@ for (let i = 0; i < days.length; i += 1) {
 }
 
 function zoomIn() {
-  event.target.style.fontSize = '35px';
+  event.target.style.fontSize = '25px';
 
   event.target.addEventListener('mouseout', zoomOut);
 }
@@ -109,3 +109,13 @@ function zoomOut() {
 }
 
 // Minhas tarefas ----------
+
+function createMyTasks(name) {
+  const text = document.createTextNode(name)
+  const taskContainer = document.querySelector('.my-tasks');
+  const task = document.createElement('span');
+  task.appendChild(text)
+  taskContainer.appendChild(task);
+}
+
+createMyTasks('Cozinhar');
