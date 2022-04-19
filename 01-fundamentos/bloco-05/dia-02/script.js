@@ -49,8 +49,10 @@ function createElements(element, text) {
 }
 
 sectionRight.appendChild(list)
-main.appendChild(createElements('h3', 'Titulo'));
-main.appendChild(createElements('h3', 'Titulo'));
-main.appendChild(createElements('h3', 'Titulo'));
+for (let i = 0; i < 3; i += 1) {
+  h3 = createElements('h3', 'Titulo',);
+  h3.classList.add('description');
+  main.appendChild(h3);
+}
 
 title.classList.add('title');
