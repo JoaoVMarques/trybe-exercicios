@@ -15,6 +15,7 @@ paragraph.innerText = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 sectionMain.appendChild(paragraph);
 
 main.appendChild(createSection('left-content'));
+sectionLeft = document.getElementsByClassName('left-content')[0];
 main.appendChild(createSection('right-content'));
 
 function createSection(className) {
@@ -22,3 +23,8 @@ function createSection(className) {
   section.classList.add(className)
   return section
 }
+
+let img = document.createElement('img');
+img.src = 'https://picsum.photos/200';
+img.classList.add('small-image')
+sectionLeft.appendChild(img);
