@@ -60,3 +60,6 @@ title.classList.add('title');
 main.removeChild(sectionLeft);
 
 sectionRight.style.marginRight = 'auto';
+
+sectionDad = sectionMain.parentNode;
+sectionDad.style.backgroundColor = 'lime';
