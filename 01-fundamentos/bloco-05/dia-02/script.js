@@ -6,3 +6,7 @@ body.appendChild(title);
 let main = document.createElement('main');
 main.classList.add('main-content');
 body.appendChild(main);
+
+let sectionMain = document.createElement('section');
+sectionMain.classList.add('center-content');
+main.appendChild(sectionMain);
