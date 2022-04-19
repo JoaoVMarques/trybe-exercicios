@@ -31,23 +31,24 @@ img.classList.add('small-image')
 sectionLeft.appendChild(img);
 
 list = document.createElement('ul');
-list.appendChild(createLi('Um'))
-list.appendChild(createLi('Dois'))
-list.appendChild(createLi('Tres'))
-list.appendChild(createLi('Quatro'))
-list.appendChild(createLi('Cinco'))
-list.appendChild(createLi('Seis'))
-list.appendChild(createLi('Sete'))
-list.appendChild(createLi('Oito'))
-list.appendChild(createLi('Nove'))
-list.appendChild(createLi('Dez'))
+list.appendChild(createElements('li', 'Um'));
+list.appendChild(createElements('li', 'Dois'));
+list.appendChild(createElements('li', 'Tres'));
+list.appendChild(createElements('li', 'Quatro'));
+list.appendChild(createElements('li', 'Cinco'));
+list.appendChild(createElements('li', 'Seis'));
+list.appendChild(createElements('li', 'Sete'));
+list.appendChild(createElements('li', 'Oito'));
+list.appendChild(createElements('li', 'Nove'));
+list.appendChild(createElements('li', 'Dez'));
 
-
-
-function createLi(text) {
-  let li = document.createElement('li');
-  li.innerText = text;
-  return li;
+function createElements(element, text) {
+  let elements = document.createElement(element);
+  elements.innerText = text;
+  return elements;
 }
 
 sectionRight.appendChild(list)
+main.appendChild(createElements('h3', 'Titulo'));
+main.appendChild(createElements('h3', 'Titulo'));
+main.appendChild(createElements('h3', 'Titulo'));
