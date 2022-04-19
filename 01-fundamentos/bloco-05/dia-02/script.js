@@ -10,3 +10,7 @@ body.appendChild(main);
 let sectionMain = document.createElement('section');
 sectionMain.classList.add('center-content');
 main.appendChild(sectionMain);
+
+let paragraph = document.createElement('p');
+paragraph.innerText = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit nulla eos quisquam, eaque deleniti quia distinctio quibusdam.'
+sectionMain.appendChild(paragraph);
