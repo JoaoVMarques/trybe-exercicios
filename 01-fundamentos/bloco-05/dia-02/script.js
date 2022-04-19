@@ -52,3 +52,5 @@ sectionRight.appendChild(list)
 main.appendChild(createElements('h3', 'Titulo'));
 main.appendChild(createElements('h3', 'Titulo'));
 main.appendChild(createElements('h3', 'Titulo'));
+
+title.classList.add('title');
