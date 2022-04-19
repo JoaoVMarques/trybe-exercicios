@@ -58,3 +58,5 @@ for (let i = 0; i < 3; i += 1) {
 title.classList.add('title');
 
 main.removeChild(sectionLeft);
+
+sectionRight.style.marginRight = 'auto';
