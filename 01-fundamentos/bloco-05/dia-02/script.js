@@ -63,3 +63,6 @@ sectionRight.style.marginRight = 'auto';
 
 sectionDad = sectionMain.parentNode;
 sectionDad.style.backgroundColor = 'lime';
+
+list.lastChild.remove();
+list.lastChild.remove();
