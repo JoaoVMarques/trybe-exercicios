@@ -3,6 +3,6 @@
   padding: 0;
 }
 
-.form-data {
-  width: 30%;
+.row {
+  align-items: flex-end;
 }

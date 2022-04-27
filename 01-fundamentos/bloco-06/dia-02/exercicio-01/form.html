@@ -22,33 +22,33 @@
       </header>
     </div>
     <div class="card-body bg-light">
-      <form class="container mb-3">
+      <form class="container mb-3" id="form" action="#" method="get" autocomplete="off">
         <div class="mb-3">
           <label class="form-label" for="name">Nome</label>
-          <input class="form-control" type="text" id="name" minlength="10" maxlength="40"
+          <input class="form-control" type="text" id="name" name="name"
             placeholder="nome sobrenome" />
         </div>
         <div class="mb-3">
           <label class="form-label" for="email">Email</label>
-          <input class="form-control" type="email" id="email" minlength="10" maxlength="50"
+          <input class="form-control" type="email" id="email" name="email"
             placeholder="name@example.com" />
             <p class="form-text">Não Compartilhe seu e-mail para qualquer um.</p>
         </div>
         <div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="destiny" id="city" checked/>
+            <input class="form-check-input" type="radio" name="destiny" id="city" value="city" checked/>
             <label class="form-check-label" for="city">Cidade</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="destiny" id="field" />
+            <input class="form-check-input" type="radio" name="destiny" id="field" value="field" />
             <label class="form-check-label" for="field">Campo</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="destiny" id="beach" />
+            <input class="form-check-input" type="radio" name="destiny" id="beach" value="beach" />
             <label class="form-check-label" for="beach">Praia</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="destiny" id="mountains" />
+            <input class="form-check-input" type="radio" name="destiny" id="mountains" value="mountains" />
             <label class="form-check-label" for="mountains">Montanhas</label>
           </div>
         </div>
@@ -56,13 +56,18 @@
           <label class="form-label" for="reason">Por que você deveria ser a pessoa desenvolvedora a ganhar o
             concurso TrybeTrip?</label>
           <div class="">
-            <textarea class="form-control" name="" id="reason" cols="30" rows="10" placeholder="Digite aqui o motivo :D"
+            <textarea class="form-control" name="answer" id="reason" cols="30" rows="10" placeholder="Digite aqui o motivo :D"
               maxlength="500"></textarea>
           </div>
         </div>
-        <div class="mb-3">
-          <label class="form-label-data" for="data">data</label>
-          <input type="text" id="datepicker" class="form-control form-data">
+        <div class="mb-3 row g-2">
+          <div class="col-auto">
+            <label class="form-label-data" for="selectData">data</label>
+            <input type="text" id="datepicker" name="date" class="form-control" disabled />
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-primary inline" id="selectData">Escolher data</button>
+          </div>
         </div>
         <div class="form-check">
           <input type="checkbox" name="opportunities" id="opportunities" />
@@ -74,11 +79,12 @@
           <label class="form-label" for="use-pictures">Concordo que imagens das minhas férias poderão ser usadas na
             divulgação de concursos futuros.</label>
         </div>
-        <button class="btn btn-primary" type="submit" id="send-button">Enviar</button>
+        <button class="btn btn-primary" type="submit" id="submit-btn">Enviar</button>
         <button class="btn btn-danger" type="reset">Apagar</button>
       </form>
     </div>
   </main>
+  <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="script.js"></script>
 </body>
