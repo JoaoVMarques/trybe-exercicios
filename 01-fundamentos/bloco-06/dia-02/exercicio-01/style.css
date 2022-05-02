@@ -3,6 +3,6 @@
   padding: 0;
 }
 
-.row {
-  align-items: flex-end;
+.col-button {
+  padding-top: 23px;
 }
