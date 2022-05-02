@@ -38,10 +38,24 @@
   box-shadow: 2px 2px 2px rgb(180, 180, 180);;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin: 15px auto 5px;
+  width: 200px;
+}
+
 header {
   background-color: rgb(61, 61, 61);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   color: white;
+}
+
+header h3 {
+  text-decoration: underline;
 }
