@@ -52,8 +52,8 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 6.2 - Bibliotecas JavaScript e Frameworks CSS
 - [x] 6.3 - Introdução - CSS Flexbox
 - [x] 6.3 - CSS Flexbox - Parte 1
-- [ ] 6.4 - CSS Flexbox - Parte 2
-- [ ] 6.5 - CSS Responsivo - Mobile First
+- [x] 6.4 - CSS Flexbox - Parte 2
+- [x] 6.5 - CSS Responsivo - Mobile First
 - [ ] 6.6 - Projeto - Página inicial do Facebook
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários ❌
