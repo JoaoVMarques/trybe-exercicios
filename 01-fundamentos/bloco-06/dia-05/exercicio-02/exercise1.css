@@ -47,3 +47,43 @@ figcaption {
   font-size: .8em;
   margin-bottom: 25px;
 }
+
+@media screen and (max-width: 799px) {
+  figure {
+    text-align: center;
+  }
+  
+  figcaption {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  body {
+    background-color: rgb(211, 211, 211);
+    font-size: 19px;
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    margin-left: 10px;
+    flex-basis: 48%;
+  }
+}
