@@ -52,13 +52,13 @@ figcaption {
   figure {
     text-align: center;
   }
-  
+
   figcaption {
     font-size: 17px;
   }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) and (max-width: 1299px){
   body {
     background-color: rgb(211, 211, 211);
     font-size: 19px;
@@ -85,5 +85,35 @@ figcaption {
   figure {
     margin-left: 10px;
     flex-basis: 48%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: whitesmoke;
+    font-size: 24px;
+    margin: 25px;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    margin-left: 10px;
+    flex-basis: 30%;
   }
 }
