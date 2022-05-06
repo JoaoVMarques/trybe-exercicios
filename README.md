@@ -47,16 +47,16 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 5.7 - (Bônus) Projeto - Adivinhe a Cor
 - [x] 5.7 - (Bônus) Projeto - Carta Misteriosa
 
-##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo ⌛
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo ❌
 - [x] 6.1 - HTML & CSS - Forms
 - [x] 6.2 - Bibliotecas JavaScript e Frameworks CSS
 - [x] 6.3 - Introdução - CSS Flexbox
 - [x] 6.3 - CSS Flexbox - Parte 1
 - [x] 6.4 - CSS Flexbox - Parte 2
 - [x] 6.5 - CSS Responsivo - Mobile First
-- [ ] 6.6 - Projeto - Página inicial do Facebook
+- [x] 6.6 - Projeto - Página inicial do Facebook
 
-##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários ❌
+##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários ⌛
 - [ ] 7.1 - JavaScript ES6 - let, const, arrow functions e template literals
 - [ ] 7.2 - JavaScript ES6 - Objects
 - [ ] 7.3 - Testes unitários em JavaScript
