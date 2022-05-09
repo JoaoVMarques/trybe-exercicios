@@ -18,10 +18,20 @@ const lesson3 = {
   turno: 'noite',
 };
 
-function ModifyObjet(object, key, value) {
+function modifyObject(object, key, value) {
   object[key] = value;
 }
 
-ModifyObjet(lesson2, 'turno', 'noite');
+modifyObject(lesson2, 'turno', 'noite');
+// console.log(lesson2);
 
-console.log(lesson2);
+function listObject(object) {
+  console.log(Object.keys(object))
+}
+
+function ObjectLength(object) {
+  console.log(Object.keys(object).length);
+}
+
+listObject(lesson2);
+ObjectLength(lesson2);
