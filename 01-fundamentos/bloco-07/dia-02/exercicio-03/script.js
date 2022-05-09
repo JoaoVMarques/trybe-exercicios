@@ -25,13 +25,18 @@ function modifyObject(object, key, value) {
 modifyObject(lesson2, 'turno', 'noite');
 // console.log(lesson2);
 
-function listObject(object) {
-  console.log(Object.keys(object))
+function listKeyObject(object) {
+  console.log(Object.keys(object));
 }
 
 function ObjectLength(object) {
   console.log(Object.keys(object).length);
 }
 
-listObject(lesson2);
+function listValueObject(object) {
+  console.log(Object.values(object));
+}
+
+listKeyObject(lesson2);
+listValueObject(lesson2);
 ObjectLength(lesson2);
