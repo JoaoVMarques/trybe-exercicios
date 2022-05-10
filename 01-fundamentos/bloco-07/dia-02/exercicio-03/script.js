@@ -76,9 +76,29 @@ function numberOfMatStudends() {
   console.log(`Número de alunos em Matemática ${num}`);
 }
 
+function teacherRelatory(teacher) {
+  const arr = Object.entries(allLessons);
+  let studentsNum = 0;
+  const classes = [];
+  for (let i in arr) {
+    if (arr[i][1].professor === teacher) {
+      classes.push(arr[i][1].materia);
+      studentsNum += arr[i][1].numeroEstudantes;
+    }
+  }
+  console.log(`
+----------------------------
+Professor: ${teacher}
+aulas: [${classes}]
+estudantes: ${studentsNum}
+----------------------------
+`);
+}
+
 listKeyObject(lesson2);
 listValueObject(lesson2);
 ObjectLength(lesson2);
+teacherRelatory('Maria Clara');
 numberOfMatStudends();
 getValueByNumber(lesson2, 0);
 verifyPair(lesson3, 'turno', 'noite');
