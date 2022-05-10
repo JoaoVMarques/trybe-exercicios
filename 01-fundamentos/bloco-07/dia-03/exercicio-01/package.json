@@ -1,8 +1,8 @@
 {
-  "name": "dia-03",
+  "name": "exercicio-01",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "sum.js",
   "scripts": {
     "test": "jest"
   },
