@@ -65,10 +65,21 @@ function verifyPair(object, key, value) {
   console.log(pair);
 }
 
+function numberOfMatStudends() {
+  const arr = Object.entries(allLessons);
+  let num = 0;
+  for (let i in arr) {
+    if (arr[i][1].materia === 'Matemática') {
+      num += arr[i][1].numeroEstudantes
+    }
+  }
+  console.log(`Número de alunos em Matemática ${num}`);
+}
+
 listKeyObject(lesson2);
 listValueObject(lesson2);
 ObjectLength(lesson2);
-numStudents();
+numberOfMatStudends();
 getValueByNumber(lesson2, 0);
 verifyPair(lesson3, 'turno', 'noite');
 verifyPair(lesson3, 'materia', 'Maria Clara');
