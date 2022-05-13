@@ -47,7 +47,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 5.7 - (Bônus) Projeto - Adivinhe a Cor
 - [x] 5.7 - (Bônus) Projeto - Carta Misteriosa
 
-##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo ❌
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo ✔
 - [x] 6.1 - HTML & CSS - Forms
 - [x] 6.2 - Bibliotecas JavaScript e Frameworks CSS
 - [x] 6.3 - Introdução - CSS Flexbox
@@ -56,14 +56,14 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 6.5 - CSS Responsivo - Mobile First
 - [x] 6.6 - Projeto - Página inicial do Facebook
 
-##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários ⌛
+##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários ✔
 - [x] 7.1 - JavaScript ES6 - let, const, arrow functions e template literals
 - [x] 7.2 - JavaScript ES6 - Objects
 - [x] 7.3 - Testes unitários em JavaScript
-- [ ] 7.4 - Projeto - JavaScript Testes Unitários
+- [x] 7.4 - Projeto - JavaScript Testes Unitários
 
-##### Bloco 8: Higher Order Functions do JavaScript ES6 ❌
-- [ ] 8.1 - JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+##### Bloco 8: Higher Order Functions do JavaScript ES6 ⌛
+- [x] 8.1 - JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
 - [ ] 8.2 - JavaScript ES6 - Higher Order Functions - map e filter
 - [ ] 8.3 - JavaScript ES6 - Higher Order Functions - reduce
 - [ ] 8.4 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
