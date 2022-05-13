@@ -28,6 +28,7 @@ const mageSpell = () => ({
 });
 
 const mageDamage = (mageSpell) => {
+  console.log(mage.mana);
   const manaCost = mageSpell.manaCost
   if (mage.mana >= manaCost) {
     mage.mana -= manaCost;
@@ -36,8 +37,28 @@ const mageDamage = (mageSpell) => {
   return 'Não possui mana suficiente';
 }
 
-for (let i = 0; i < 20; i += 1) {
-  console.log('-------')
-  console.log('Dano:' + mageDamage(mageSpell()));
-  console.log('Mana:' + mage.mana);
+const gameActions = {
+  warrior: () => {
+    warrior.damage = warriosDamage();
+    dragon.healthPoints -= warrior.damage;
+  },
+  mage: () => {
+    mage.damage = mageDamage(mageSpell());
+    dragon.healthPoints -= mage.damage;
+  },
+  dragon: () => {
+    dragon.damage = dragonDamage();
+    mage.healthPoints -= dragon.damage;
+    warrior.healthPoints -= dragon.damage;
+  },
+  battleMembers: () => battleMembers,
 }
+
+console.log(gameActions.battleMembers());
+console.log('-------------------------');
+gameActions.warrior();
+console.log(gameActions.battleMembers());
+console.log('-------------------------');
+gameActions.dragon();
+console.log(gameActions.battleMembers());
+
