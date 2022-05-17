@@ -81,5 +81,10 @@ const nameAndAge = () => {
   return arr;
 }
 
+const fantasyOrScienceFiction = () => {
+  return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+}
+
 // console.log(formatedBook());
-console.log(nameAndAge());
+// console.log(nameAndAge());
+console.log(fantasyOrScienceFiction());
