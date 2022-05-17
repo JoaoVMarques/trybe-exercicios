@@ -81,10 +81,13 @@ const nameAndAge = () => {
   return arr;
 }
 
-const fantasyOrScienceFiction = () => {
-  return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+const fantasyOrScienceFiction = () => books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+
+const oldBooksOrdered = () => {
+  return books.filter((book) => 2022 - book.releaseYear > 60).sort((a,b) => b.releaseYear - a.releaseYear);
 }
 
 // console.log(formatedBook());
 // console.log(nameAndAge());
-console.log(fantasyOrScienceFiction());
+// console.log(fantasyOrScienceFiction());
+console.log(oldBooksOrdered());
