@@ -67,11 +67,13 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [x] 8.2 - JavaScript ES6 - Higher Order Functions - map e filter
 - [x] 8.3 - JavaScript ES6 - Higher Order Functions - reduce
 - [x] 8.4 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
-- [ ] 8.5 - Projeto - Zoo functions
+- [x] 8.5 - Projeto - Zoo functions
+
+## Desenvolvimento Front-end ⌛
 
 ##### Bloco 9: JavaScript Assíncrono e Promises
-- [ ] 9.1 - JavaScript Assíncrono e Callbacks
-- [ ] 9.2 - JavaScript Promises
+- [x] 9.1 - JavaScript Assíncrono e Callbacks
+- [x] 9.2 - JavaScript Promises
 - [ ] 9.3 - Projeto - Carrinho de Compras
 
 ##### Bloco 10: Testes automatizados com Jest
@@ -80,7 +82,6 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 - [ ] 10.3 - Jest - Simulando comportamentos
 - [ ] 10.4 - Projeto - Jest Assíncrono e Mocking
 
-## Desenvolvimento Front-end ⌛
 
 ##### Bloco 11: Introdução à React
 - [ ] 11.1 - Introdução - Front-end
