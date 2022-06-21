@@ -3,8 +3,9 @@ import Pokemon from "./Pokemon";
 
 class Card extends Component {
   render() {
+    const { pokemon } = this.props
     return(
-      <Pokemon pokemon={this.props.pokemon} />
+      <Pokemon pokemon={pokemon} />
     )
   }
 }

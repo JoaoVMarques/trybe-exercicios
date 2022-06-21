@@ -1,14 +1,15 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 class Pokemon extends Component {
   render() {
-    const { name, type, value } = this.props.pokemon;
+    const { name, type, averageWeight: { value, measurementUnit }, image } = this.props.pokemon;
     return (
-      <>
+      <div className="card">
         <h1>{name}</h1>
-        <span>{type}</span>
-        <span>{value}</span>
-      </>
+        <p>{type}</p>
+        <p>Average Weight: {value} {measurementUnit}</p>
+        <img src={image} />
+      </div>
     )
   }
 }
