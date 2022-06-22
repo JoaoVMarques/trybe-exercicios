@@ -15,23 +15,31 @@ class App extends Component {
     }
   }
 
-  handleClick() {
+  handleClick(event) {
     this.setState((oldState, _props) => ({
       clicksButton1: oldState.clicksButton1 +1
     }))
+    const color = this.checkIfNumberIsPair(this.state.clicksButton1) ? 'green' : 'black'
+    event.target.style.color = color;
   }
 
-  handleClick2() {
+  handleClick2(event) {
     this.setState((oldState, _props) => ({
       clicksButton2: oldState.clicksButton2 +1
     }))
+    const color = this.checkIfNumberIsPair(this.state.clicksButton2) ? 'green' : 'black'
+    event.target.style.color = color;
   }
 
-  handleClick3() {
+  handleClick3(event) {
     this.setState((oldState, _props) => ({
       clicksButton3: oldState.clicksButton3 +1
-    }))
+    })) 
+    const color = this.checkIfNumberIsPair(this.state.clicksButton3) ? 'green' : 'black'
+    event.target.style.color = color;
   }
+
+  checkIfNumberIsPair = (number) => number % 2 === 0
 
   render() {
     return (
