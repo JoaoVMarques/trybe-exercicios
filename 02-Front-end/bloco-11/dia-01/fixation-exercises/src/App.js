@@ -1,24 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function handleClick() {
-  console.log('Clicou no botão!');
-}
+class App extends Component {
 
-function button2Click() {
-  console.log(':)');
-}
+  constructor() {
+    super()
 
-function button3Click() {
-  console.log('hello world');
-}
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-class App extends React.Component {
+  handleClick() {
+    console.log(this);
+  }
+
   render() {
     return (
       <div>
-        <button onClick={handleClick}>Meu botão</button>
-        <button onClick={button2Click}>Feliz</button>
-        <button onClick={button3Click}>Sucesso para Fama</button>
+        <button onClick={this.handleClick}>Meu botão</button>
       </div>
     )
   }
