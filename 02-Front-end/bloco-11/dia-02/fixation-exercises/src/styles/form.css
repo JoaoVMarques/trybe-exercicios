@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 4px;
+}
+
+textarea {
+  margin-top: 10px;
+  resize: vertical;
+}
+
+form {
+  width: 40vw;
+  margin: auto;
+}
