@@ -2,10 +2,11 @@ import React, { Component } from "react";
 
 class FilterButton extends Component {
   render() {
-    const { type } = this.props
+    let { type, changeFilter, resetPokemonNum } = this.props
+    
     return (
       <>
-        <button className="filter-button">{ type }</button>
+        <button onClick={() => {changeFilter(type); resetPokemonNum() }} className="filter-button">{ type }</button>
       </>
     )
   }
