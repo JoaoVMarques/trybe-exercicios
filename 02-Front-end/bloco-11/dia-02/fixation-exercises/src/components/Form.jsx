@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import '../styles/form.css'
+import Superior from "./form/Superior";
+import Inferior from "./form/Inferior";
+import "../styles/form.css";
 
 class Form extends Component {
   constructor() {
     super();
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);;
 
     this.state = {
       comidaFavorita: "",
@@ -31,53 +33,18 @@ class Form extends Component {
         <h1>Formulario super bacana B)</h1>
         <form>
           <fieldset>
-            <label>
-              Comida favorita:
-              <input
-                name="comidaFavorita"
-                value={this.state.comidaFavorita}
-                onChange={this.handleChange}
-                type="text"
-                placeholder="nham nham"
-              />
-            </label>
-            <label>
-              Idade:
-              <input
-                name="idade"
-                value={this.state.idade}
-                onChange={this.handleChange}
-                type="number"
-                placeholder="0"
-              />
-            </label>
-            <label>
-              Personagem favorito:
-              <select
-                name="personagemFavorito"
-                value={this.state.personagemFavorito}
-                onChange={this.handleChange}
-              >
-                <option value="mario">Mario</option>
-                <option value="luigi">Luigi</option>
-                <option value="yoshi">Yoshi</option>
-              </select>
-            </label>
+            <Superior
+              handleChange={this.handleChange}
+              favoriteFood={this.state.comidaFavorita}
+              age={this.state.idade}
+              favoriteCharacter={this.state.personagemFavorito}
+            />
           </fieldset>
           <fieldset>
-            <label>
-              Gosta de golfinhos?
-              <input
-                name="gostaDeGolfinhos"
-                value={this.state.gostaDeGolfinhos}
-                onChange={this.handleChange}
-                type="checkbox"
-              />
-            </label>
-            <label>
-              Qual pudim mais bonito voce ja viu?
-              <input type="file" />
-            </label>
+            <Inferior 
+            handleChange={this.handleChange}
+            likeDolphin={this.gostaDeGolfinhos}
+            />
           </fieldset>
           <label>
             Escreva algo legal:
