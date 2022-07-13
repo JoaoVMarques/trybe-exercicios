@@ -74,7 +74,7 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 ##### Bloco 9: JavaScript Assíncrono e Promises
 - [x] 9.1 - JavaScript Assíncrono e Callbacks
 - [x] 9.2 - JavaScript Promises
-- [ ] 9.3 - Projeto - Carrinho de Compras
+- [x] 9.3 - Projeto - Carrinho de Compras
 
 ##### Bloco 10: Testes automatizados com Jest
 - [x] 10.1 - Primeiros passos no Jest
@@ -93,16 +93,16 @@ a lista vai mostrar todas as atividades feitas e futuros projetos feitos por mim
 ##### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 - [x] 12.1 - Componentes com estado e eventos
 - [x] 12.2 - Formulários no React
-- [ ] 12.3 - Projeto - Movie Cards Library Stateful
+- [x] 12.3 - Projeto - Movie Cards Library Stateful
 
 ##### Bloco 13: Ciclo de Vida de Componentes e React Router
-- [ ] 13.1 - Ciclo de vida de componentes
-- [ ] 13.2 - React Router
-- [ ] 13.3 - Projeto - Movie Cards Library CRUD
+- [x] 13.1 - Ciclo de vida de componentes
+- [x] 13.2 - React Router
+- [x] 13.3 - Projeto - Movie Cards Library CRUD
 
 ##### Bloco 14: Metodologias Ágeis
-- [ ] 14.1 - Metodologias Ágeis
-- [ ] 14.2 - Projeto - Frontend Online Store
+- [x] 14.1 - Metodologias Ágeis
+- [x] 14.2 - Projeto - Frontend Online Store
 
 ##### Bloco 15: Testes automatizados com React Testing Library
 - [ ] 15.1 - RTL - Primeiros passos
