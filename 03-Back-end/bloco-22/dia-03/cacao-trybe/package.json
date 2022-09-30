@@ -1,8 +1,8 @@
 {
-  "name": "calcule",
+  "name": "cacao-trybe",
   "version": "1.0.0",
   "description": "",
-  "main": "calculaSituacao.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha tests/**/*.test.js --exit"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "4.3",
+    "chai-http": "4.3",
     "mocha": "10.0"
   },
   "dependencies": {
