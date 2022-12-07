@@ -1,2 +1,2 @@
 use('test')
-db.books.countDocuments({ status: "PUBLISH" })
+db.books.countDocuments({})
