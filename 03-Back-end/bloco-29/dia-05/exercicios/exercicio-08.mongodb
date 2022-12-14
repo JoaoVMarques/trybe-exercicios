@@ -1,5 +1,5 @@
 use('cinema');
-db.movies.updateMany(
+db.movies.updateOne(
   { title: 'Home Alone' },
   { $push: { cast: { $each: [
       {

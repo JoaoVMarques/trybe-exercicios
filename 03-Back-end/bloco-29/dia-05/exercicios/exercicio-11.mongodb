@@ -1,19 +1,19 @@
 use('cinema');
-db.movies.updateMany(
+db.movies.updateOne(
   { 
     title: 'Batman',
     'cast.character': 'Batman' 
    },
   { $push: { 'cast.$.actor': 'Christian Bale' } }
 )
-db.movies.updateMany(
+db.movies.updateOne(
   { 
     title: 'Batman',
     'cast.character': 'Alfred' 
    },
   { $push: { 'cast.$.actor': 'Michael Caine' } }
 )
-db.movies.updateMany(
+db.movies.updateOne(
   { 
     title: 'Batman',
     'cast.character': 'Coringa' 
