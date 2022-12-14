@@ -1,0 +1,4 @@
+use('class')
+db.movies.updateOne({ title: 'Batman' },
+{ $set: { budget: 'estimatedBudget' } });
+db.movies.find({});
