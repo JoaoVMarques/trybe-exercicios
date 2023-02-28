@@ -28,5 +28,5 @@ class Estatistica:
         moda = statistics.mode(self.__numeros)
         return f"A moda dos valores é: {moda}"
 
-estatistica = Estatistica([1, 2, 3, 4])
-print(estatistica)
+# estatistica = Estatistica([1, 2, 3, 4])
+# print(estatistica)
