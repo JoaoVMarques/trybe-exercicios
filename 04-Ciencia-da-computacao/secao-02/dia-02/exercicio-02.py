@@ -33,3 +33,9 @@ class Baralho:
 
     def __len__(self):
         return len(self._cartas)
+    
+    def __iter__(self):
+        return Iterador(self._cartas)
+    
+baralho = Carta()
+print(baralho)
